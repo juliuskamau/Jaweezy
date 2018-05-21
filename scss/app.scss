@@ -175,14 +175,14 @@ p {
   color: #000
 }
 .background_blue {
-  color: #272262;
+  background-color: #272262;
 }
 
 .background_dark_blue {
-  color: #10113D;
+  background-color: #10113D;
 }
 .background_pink {
-  color: #EF185B;
+  background-color: #EF185B;
 }
 
 .color_blue p {
@@ -210,6 +210,34 @@ p {
   font-weight: bolder;
 }
 
+/*header*/
+header{
+  border: 1px solid #272262;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #272262;
+
+  .cut{
+    position: relative;
+    cursor: pointer;
+    span{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 30px;
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 25px;
+      font-size: 12px;
+      top: -10px;
+    }
+    .fa{
+      color: white;
+      font-size: 40px;
+    }
+  }
+}
 /*search bar*/
 .search{
   width: 100%;
@@ -218,7 +246,7 @@ p {
     position: absolute;
     left: 0px;
     width: 40px;
-    height: 40px;
+    height: 60px;
     border: none;
     background: none;
     text-align: center;
@@ -230,7 +258,7 @@ p {
 
   input{
     border: 1px solid #515183;
-    height: 40px;
+    height: 60px;
     border-radius: 0px;
     outline: none;
     color: #fff;
