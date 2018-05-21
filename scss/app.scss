@@ -1,0 +1,247 @@
+
+/**input field styling**/
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
+:-moz-placeholder {
+  color: #fff;
+}
+
+
+/**COMMON CSS LINES**/
+
+body {
+  font-family: "Open Sans";
+}
+.row {
+  max-width: 80.5rem;
+}
+.Semibold {
+  font-family: "Open Sans Semibold";
+}
+.Sans {
+  font-family: "Open Sans";
+}
+.Extrabold {
+  font-family: "Open Sans Extrabold";
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.clear {
+  clear: both;
+}
+.center {
+  margin: auto;
+  text-align: center !important
+}
+.text_left {
+  text-align: left;
+}
+.text_right {
+  text-align: right;
+}
+.block {
+  display: block;
+}
+
+/**MARGIN**/
+
+.margin-0 {
+  margin: 0px !important;
+}
+.margin-left-5 {
+  margin-left: 5px;
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
+.margin-right-5 {
+  margin-right: 5px;
+}
+.margin-right-10 {
+  margin-right: 10px;
+}
+.margin-right-20 {
+  margin-right: 20px;
+}
+.margin-top-5 {
+  margin-top: 5px;
+}
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+.margin-bottom-10 {
+  margin-bottom: 20px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-top-10 {
+  margin-top: 20px;
+}
+/**PADDING**/
+
+.padding-0 {
+  padding: 0px;
+}
+.padding-5 {
+  padding: 5px;
+}
+.padding-top-20 {
+  padding-top: 20px;
+}
+.padding-10 {
+  padding: 10px;
+}
+.padding-15 {
+  padding: 15px;
+}
+.padding-20 {
+  padding: 20px;
+}
+.padding-left-10 {
+  padding-left: 10px;
+}
+.padding-right-10 {
+  padding-right: 10px;
+}
+/* -----------------------------------------
+   Common Heading Styles
+----------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: normal;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+p {
+  font-family: "Open Sans";
+}
+/*font colors and general styling for fonts*/
+
+.color_white {
+  color: #fff
+}
+.color_white p {
+  color: #fff
+}
+.color_black {
+  color: #000
+}
+.color_black p {
+  color: #000
+}
+.background_blue {
+  color: #272262;
+}
+
+.background_dark_blue {
+  color: #10113D;
+}
+.background_pink {
+  color: #EF185B;
+}
+
+.color_blue p {
+  color: #272262;
+}
+
+.color_dark_blue p {
+  color: #10113D;
+}
+
+.color_pink p {
+  color: #EF185B;
+}
+
+.bold {
+  font-weight: bold;
+}
+.bolder {
+  font-weight: bolder;
+}
+.bold p {
+  font-weight: bold;
+}
+.bolder p {
+  font-weight: bolder;
+}
+
+/*search bar*/
+.search{
+  width: 100%;
+  position: relative;
+  .searchButton{
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0px;
+  }
+
+  input{
+    border: 1px solid #515183;
+    height: 40px;
+    border-radius: 0px;
+    outline: none;
+    color: #fff;
+    background: #515183;
+    padding-left: 5%;
+    &:focus{
+      color: #fff;
+      background: #515183f2;
+      border: 1px solid #515183f2;
+    }
+  }
+
+
+}
