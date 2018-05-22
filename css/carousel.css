@@ -447,6 +447,7 @@
 /** Gallery */
 .lSSlideOuter .lSPager.lSGallery {
   list-style: none outside none;
+  width: 100% !important;
   padding-left: 0;
   margin: 0;
   overflow: hidden;
@@ -465,12 +466,32 @@
   user-select: none;
 }
 .lSSlideOuter .lSPager.lSGallery li {
-  overflow: hidden;
+ /* overflow: hidden;*/
   -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
   transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+ 
+
+
 }
-.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-  border-radius: 5px;
+
+.lSSlideOuter .lSPager.lSGallery li ,
+.lSSlideOuter .lSPager.lSGallery li img{
+ height: 80px;
+  width: 80px !important;
+  border-radius: 80px;
+  overflow: hidden;
+  display: block;
+}
+
+/*.lSSlideOuter .lSPager.lSGallery li {
+  height: 80px;
+  width: 80px !important;
+}
+*/
+
+.lSSlideOuter .lSPager.lSGallery li.active img,
+ .lSSlideOuter .lSPager.lSGallery li:hover  img{
+opacity: 0.89;
 }
 .lSSlideOuter .lSPager.lSGallery img {
   display: block;
@@ -722,7 +743,12 @@ cursor: grab;
 background: #39B54A;
 background: linear-gradient(0deg, #177B3F 8%, #39B54A 83%);
 text-align: center;
+border-radius: 10px;
 }
+.lslide  img
+{
+  border-radius: 10px;
+  }
 .lightSlider.lsGrab > * .title,
 .lightSlider.lsGrabbing > * .title{
   font-size: 125px;
@@ -747,4 +773,5 @@ cursor: -ms-grabbing;
 cursor: grabbing;
 background: #39B54A;
 background: linear-gradient(0deg, #177B3F 8%, #39B54A 83%);
+border-radius: 10px;
 }

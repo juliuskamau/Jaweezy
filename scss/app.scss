@@ -14,6 +14,99 @@
   color: #fff;
 }
 
+/* -----------------------------------------
+   INPUT FIELDS Styles
+----------------------------------------- */
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+input[type="color"], 
+textarea,
+select
+{   
+    outline: none;
+    resize: none;
+    background: #4F4F8C;
+    border: none;
+    box-shadow: none;
+    color: #6A747B;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+input[type="number"]{
+  color: #000;
+  font-family: 'Chivo-Black';
+  background: #F2F2F2;
+}
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="date"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="month"]:focus, 
+input[type="week"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="time"]:focus, 
+input[type="url"]:focus, 
+input[type="color"]:focus, 
+textarea:focus,
+select:focus
+{   
+  background: #F1185C;
+}
+input[type="text"]:hover, 
+input[type="password"]:hover, 
+input[type="date"]:hover, 
+input[type="datetime"]:hover, 
+input[type="datetime-local"]:hover, 
+input[type="month"]:hover, 
+input[type="week"]:hover, 
+input[type="email"]:hover, 
+input[type="number"]:hover, 
+input[type="search"]:hover, 
+input[type="tel"]:hover, 
+input[type="time"]:hover, 
+input[type="url"]:hover, 
+input[type="color"]:hover, 
+textarea:hover,
+select:hover
+{   
+  background: #F1185C;
+	
+}
+input[type="checkbox"]
+{   
+    margin: 5px 8px 0 0;
+}
+input[type="checkbox"]:hover
+{   
+    cursor: pointer;
+}
+input[type="number"]
+{   
+     padding: 0 0 0 10px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+{
+    opacity: 1;
+}
+
+
 /*buttons*/
 
 .button{
@@ -63,6 +156,20 @@ button:hover, button:focus, .button:hover, .button:focus{
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Chivo-Regular';
+  src: url('Chivo-Regular.eot');
+  src: url('Chivo-Regular.woff2') format('woff2'),
+       url('Chivo-Regular.woff') format('woff'),
+       url('Chivo-Regular.ttf') format('truetype'),
+       url('Chivo-Regular.svg#Chivo-Regular') format('svg'),
+       url('Chivo-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 /**COMMON CSS LINES**/
 
@@ -254,7 +361,7 @@ p {
 /*header*/
 header{
   border: 1px solid #272262;
-  margin-bottom: 1.25rem;
+ /* margin-bottom: 1.25rem;*/
   padding: 1.25rem;
   background: #272262;
 
@@ -446,6 +553,7 @@ header{
       }
     }
 
+
   
 
 
@@ -537,8 +645,293 @@ padding: 1.25rem;
 
 /*pop up*/
 
+.reveal-modal-bg{
+  background: #272262;
+  background: rgba(39, 34, 98, 0.87);
+}
+
+.reveal-modal{
+  max-width:75.5rem;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+
+ h1,h2,h3,h4,p{
+  color: #666666;
+ }
+  .modalTitle{
+    color:#666666;
+    text-transform: uppercase;
+    font-family: 'Chivo-Black';
+    margin: 0px 0px 1.25rem 0px;
+  }
+  .modalSubTitle{
+    font-family: 'Chivo-Black';
+    margin: 0px 0px 1.25rem 0px;
+  } 
+  h3{
+    color: #262262;
+    font-family: 'Chivo-Bold';
+    text-transform: uppercase;
+  }
+  h4{
+    font-family: 'Chivo-Black';
+    color: #9999cc;
+    font-size: 20px;
+    margin: 0px 0px 1.25rem 0px;
+  }
+  .wine{
+    p{
+      margin: 0px;
+    }
+  }
+  .close-reveal-modal{
+    top: -5.375rem;
+  }
+  input{
+    margin: 0px 0px 1.25rem 0px;
+    height: 3.3125rem;
+  }
+}
+
+/*drop down*/
+
+.f-dropdown.content{
+  max-width: 500px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  .border-bottom{
+    border-bottom: solid 1px #DFDFDF;
+    padding-bottom: 20px;
+    border-top: solid 1px #DFDFDF;
+    padding-top: 20px;
+  }
+  h1{
+    font-family: 'Chivo-Bold';
+    color: #666666;
+    font-size: 20pt;
+    margin: 0px 0px 1.25rem 0px;
+  }
+  h2{
+    font-family: 'Chivo-Bold';
+    color: #5AC974;
+    font-size: 12.19pt;
+    margin: 0px 0px 1.25rem 0px;
+  }
+  h3{
+    color:#262262;
+    font-family: 'Chivo-Black';
+    font-size: 17.82pt;
+    span{
+      color:#999999;
+      font-size: 16.54pt;
+    }
+  }
+  h4{
+    font-size: 9.27pt;
+    font-family: 'Chivo-Bold';
+    color: #808080;
+    margin: 0px 0px 0.5rem 0px;
+  }
+
+  .containner_drop{
+height: 300px;
+overflow-y: auto;
+overflow-x: hidden;
+  }
+
+  .panel{
+    color: #262262;
+    font-family: 'Chivo-Black';
+    font-size: 16pt;
+    display: flow-root;
+    margin-top: 1.25rem;
+    padding: 0.5rem;
+    border: none;
+  }
+}
+
+.background-transparent{
+  background: none;
+  border: none;
+  .f-dropdown.content{
+    display: block;
+    left: initial;
+    border-radius: 0px;
+    border: none;
+    &::before,&::after{
+      display: none;
+    }
 
 
+  }
+  .f-dropdown li:hover,
+ .f-dropdown li:focus{
+   background: none;
+ }
+
+ .tabs dd > a, .tabs .tab-title > a{
+  height: 30px;
+  width: 30px;
+  padding: 0px;
+  border-radius: 30px;
+  position: relative;
+  &::before{
+    
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: -45px;
+    border: none;
+    margin: 0px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 50px;
+    font-family: 'Chivo-Light';
+  }
+
+ }
+ .tabs .tab-title{
+  &:nth-of-type(1) a{
+    &::before{
+      content: 'Cart';
+    }
+  }
+  &:nth-of-type(2n) a{
+    &::before{
+      content: 'Customer Info';
+    }
+  }
+  &:nth-of-type(3n) a{
+    &::before{
+      content: 'Payment method';
+    }
+  }
+ }
+ .tabs{
+  display: inline-table;
+  max-width: 20rem;
+  margin-top: 40px;
+  position: relative;
+
+ }
+}
+
+ /*----- accordion-----*/
+ .f-dropdown.content{
+
+.accordion{
+
+  li a {
+    padding: 1rem 1rem 1rem 1rem;
+    text-transform: capitalize;
+  }
+  .accordion-navigation {
+      a{
+        position: relative;
+        background: #F2F2F2;
+        margin-bottom: 10px;
+        &:before{
+          content: '\f054';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+          position: absolute;
+          right: 1rem;
+          border: none;
+          margin: 0px;
+        }
+        &:after{
+          content: '';
+          width: 15px;
+          height: 15px;
+          border: solid 1px #CECECE;
+          border-radius: 10px;
+          position: absolute;
+          left: 1rem;
+        }
+        img{
+          margin-left: 35px;
+        }
+      }  
+ 
+      .active.content {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px !important;
+      }
+  }
+
+  .accordion-navigation.active{
+    background: #F2F2F2;
+    padding: 10px;
+    margin-bottom: 10px !important;
+a{
+  background: #F2F2F2;
+  margin-bottom: 0px;
+  &::before{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+  &:after{
+    content: '';
+    color: #F1185C;
+    font-size: 18px;
+    background: #F1185C;
+  }
+}
+
+  }
+
+  h1{
+    font-size: 16.61pt;
+    font-family: 'Chivo-Bold';
+    color: #262262;
+    margin:0px;
+  }
+  h2{
+    font-size: 16.61pt;
+    font-family: 'Chivo-Bold';
+    color: #262262;
+    margin:1.25rem 0px 0px 0px;
+  }
+  h3{
+    font-family: 'Chivo-Black';
+    font-size: 34.8pt;
+    color: #262262;
+    margin:0px;
+  }
+  h4{
+    font-family: 'Chivo-light';
+    font-size: 16.61pt;
+    color: #262262;
+  }
+  ul, ol, dl{
+margin-top: 1.25rem;
+margin-bottom: 1.25rem;
+li{
+  margin-bottom: 1rem;
+}
+  }
+}
+}
+  /*----- google map-----*/
+  
+  #map_canvas {
+    height: 350px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 /*footer*/
 footer{
   padding: 1.25rem;

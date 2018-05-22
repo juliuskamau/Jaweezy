@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Jaweezy | Welcome</title>
+  <!-- Favicon ================== -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -28,7 +30,7 @@
     </div>
     <div class="medium-1 small-1 large-1  column">
       <div class="cut">
-        <i class="fa fa-cart-plus"></i>
+        <i class="fa fa-cart-plus"data-dropdown="drop2" aria-controls="drop2" aria-expanded="false"></i>
         <span class="background_pink">10</span>
       </div>
     </div>
@@ -249,24 +251,30 @@
     <div class="row">
       <div class="large-5 small-12 medium-5 column">
           <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-              <li data-thumb="img/product/product01.png"> 
-                  <img src="img/product/product01.png" />
-                  <span class="title">HEINEKEN</span>
+              <li data-thumb="img/popupCarousel/popup01.png"> 
+                  <img src="img/popupCarousel/popup01.png" />
                    </li>
-                   <li data-thumb="img/product/product01.png"> 
-                    <img src="img/product/product01.png" />
-                    <span class="title">HEINEKEN</span>
+                   <li data-thumb="img/popupCarousel/popup02.png"> 
+                    <img src="img/popupCarousel/popup02.png" />
                      </li>
              
           </ul>   
+          <div class="center clear margin-top-10">
+            <a href="#" class="button">
+              ADD TO CART
+          </a>
+          </div>
+
+
       </div>
       <div class="large-7 small-12 medium-7 column">
-        <h1 id="modalTitle">JAMESON IRISH WHISKEY</h1>
-        <h2>THE JAMESON IRISH WHISKY STORY</h2>
+        <h1 class="modalTitle">JAMESON IRISH WHISKEY</h1>
+        <h2>ABV 35%<hr></h2>
+        <h2 class="modalSubTitle">THE JAMESON IRISH WHISKY STORY</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
 <br>
         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <h3>PERFECT SERVE<hr></h3>
+        <h2 class="modalSubTitle">PERFECT SERVE<hr></h2>
       <div class="row">
         <div class="large-4 small-4 medium-4 column center">
             <img src="img/product/product_glass.png">
@@ -285,40 +293,44 @@
         </div>
       </div>
 
-      <h3>PEOPLE ALSO VIEWED<hr></h3>
-      <div class="row">
+   
+      <h2 class="modalSubTitle">PEOPLE ALSO VIEWED<hr></h2>
+
+      <div class="row wine">
         <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_wine.png">
-          <h3>STRAIGHT</h3>
+          <img src="img/product/product_wine.png">
           <p>Enjoy with nothing added</p>
+          <h4>4,500/=</h4>
         </div>
         <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_wine.png">
-          <h3>STRAIGHT</h3>
+          <img src="img/product/product_wine.png">
           <p>Enjoy with nothing added</p>
+          <h4>4,500/=</h4>
         </div>
         <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_wine.png">
-          <h3>STRAIGHT</h3>
+          <img src="img/product/product_wine.png">
           <p>Enjoy with nothing added</p>
+          <h4>4,500/=</h4>
         </div>
       </div>
-      <h3>PEOPLE WERE ALSO INTERESTED IN<hr></h3>
-      <div class="row">
+ 
+      <h2 class="modalSubTitle">PEOPLE WERE ALSO INTERESTED IN<hr></h2>
+
+      <div class="row wine">
         <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_wine.png">
-          <h3>STRAIGHT</h3>
+          <img src="img/product/product_wine.png">
           <p>Enjoy with nothing added</p>
+          <h4>4,500/=</h4>
         </div>
         <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_wine.png">
-          <h3>STRAIGHT</h3>
+          <img src="img/product/product_wine.png">
           <p>Enjoy with nothing added</p>
+          <h4>4,500/=</h4>
         </div>
         <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_wine.png">
-          <h3>STRAIGHT</h3>
+          <img src="img/product/product_wine.png">
           <p>Enjoy with nothing added</p>
+          <h4>4,500/=</h4>
         </div>
       </div>
 
@@ -326,12 +338,449 @@
       </div>
     </div>
 
-
-
-
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<a class="close-reveal-modal" aria-label="Close">
+  <img src="img/close.png">
+</a>
   </div>
   <!-- pop up  end-->
+      <!-- drop down content start -->
+<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+  <div class="row">
+      <div class="small-12 medium-12 large-12 column">
+          <h1>
+              REVIEW YOUR CART
+            </h1>
+            <h2>FREE DELIVERY</h2>
+            <div class="containner_drop">
+            <div class="row border-bottom">
+              <div class="small-3 medium-3 large-3 column">
+                <img src="img/dropDown/dropDown01.png">
+              </div>
+              <div class="small-6 medium-6 large-6 column">
+                <h3>
+                  HEINEKEN
+            <span>
+              2,400/=
+            </span>
+                </h3>
+              </div>
+              <div class="small-3 medium-3 large-3 column">
+                <h4>six pack</h4>
+                <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+            
+              </div>
+            </div>
+
+
+
+
+            <div class="row border-bottom">
+                <div class="small-3 medium-3 large-3 column">
+                  <img src="img/dropDown/dropDown01.png">
+                </div>
+                <div class="small-6 medium-6 large-6 column">
+                  <h3>
+                    HEINEKEN
+              <span>
+                2,400/=
+              </span>
+                  </h3>
+                </div>
+                <div class="small-3 medium-3 large-3 column">
+                  <h4>six pack</h4>
+                  <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+              
+                </div>
+              </div>
+
+              <div class="row border-bottom">
+                  <div class="small-3 medium-3 large-3 column">
+                    <img src="img/dropDown/dropDown01.png">
+                  </div>
+                  <div class="small-6 medium-6 large-6 column">
+                    <h3>
+                      HEINEKEN
+                <span>
+                  2,400/=
+                </span>
+                    </h3>
+                  </div>
+                  <div class="small-3 medium-3 large-3 column">
+                    <h4>six pack</h4>
+                    <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                
+                  </div>
+                </div>
+                
+                <div class="row border-bottom">
+                    <div class="small-3 medium-3 large-3 column">
+                      <img src="img/dropDown/dropDown01.png">
+                    </div>
+                    <div class="small-6 medium-6 large-6 column">
+                      <h3>
+                        HEINEKEN
+                  <span>
+                    2,400/=
+                  </span>
+                      </h3>
+                    </div>
+                    <div class="small-3 medium-3 large-3 column">
+                      <h4>six pack</h4>
+                      <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                  
+                    </div>
+                  </div> 
+
+                </div>
+<div class="panel clear">
+  <span class="left">
+      SUBTOTAL:
+  </span>
+  <span class="right">
+      6,000.00/=
+  </span>
+</div>
+
+<a href="#" class="button"data-reveal-id="firstModal">
+    CHECK OUT
+</a>
+      </div>
+  </div>
+
+      </div>
+      <!-- drop down content end -->
+
+ <!-- check out pop up  start-->
+ <div id="firstModal" class="reveal-modal background-transparent" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+    
+<div class="center">
+    <ul class="tabs row" data-tab>
+        <li class="tab-title active small-4 column">
+          <a href="#panel1" title="Cart">&nbsp;</a>
+        </li>
+        <li class="tab-title small-4 column">
+      
+          <a href="#panel2" title="Customer Info">&nbsp;</a>
+        </li>
+        <li class="tab-title small-4 column">
+       
+          <a href="#panel3" title="Payment method">&nbsp;</a>
+        </li>
+      
+      </ul>
+
+    </div>
+
+      <div class="tabs-content">
+          <div class="content active" id="panel1">
+            <div class="row">
+              <div class="small-12 medium-6 large-6 column"></div>
+              <div class="small-12 medium-6 large-6 column">
+                  <div class="f-dropdown content">
+                      <div class="row">
+                          <div class="small-12 medium-12 large-12 column">
+                              <h1>
+                                  REVIEW YOUR CART
+                                </h1>
+                                <h2>FREE DELIVERY</h2>
+                                <div class="containner_drop">
+                                <div class="row border-bottom">
+                                  <div class="small-3 medium-3 large-3 column">
+                                    <img src="img/dropDown/dropDown01.png">
+                                  </div>
+                                  <div class="small-6 medium-6 large-6 column">
+                                    <h3>
+                                      HEINEKEN
+                                <span>
+                                  2,400/=
+                                </span>
+                                    </h3>
+                                  </div>
+                                  <div class="small-3 medium-3 large-3 column">
+                                    <h4>six pack</h4>
+                                    <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                
+                                  </div>
+                                </div>
+                    
+                    
+                    
+                    
+                                <div class="row border-bottom">
+                                    <div class="small-3 medium-3 large-3 column">
+                                      <img src="img/dropDown/dropDown01.png">
+                                    </div>
+                                    <div class="small-6 medium-6 large-6 column">
+                                      <h3>
+                                        HEINEKEN
+                                  <span>
+                                    2,400/=
+                                  </span>
+                                      </h3>
+                                    </div>
+                                    <div class="small-3 medium-3 large-3 column">
+                                      <h4>six pack</h4>
+                                      <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                  
+                                    </div>
+                                  </div>
+                    
+                                  <div class="row border-bottom">
+                                      <div class="small-3 medium-3 large-3 column">
+                                        <img src="img/dropDown/dropDown01.png">
+                                      </div>
+                                      <div class="small-6 medium-6 large-6 column">
+                                        <h3>
+                                          HEINEKEN
+                                    <span>
+                                      2,400/=
+                                    </span>
+                                        </h3>
+                                      </div>
+                                      <div class="small-3 medium-3 large-3 column">
+                                        <h4>six pack</h4>
+                                        <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                    
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="row border-bottom">
+                                        <div class="small-3 medium-3 large-3 column">
+                                          <img src="img/dropDown/dropDown01.png">
+                                        </div>
+                                        <div class="small-6 medium-6 large-6 column">
+                                          <h3>
+                                            HEINEKEN
+                                      <span>
+                                        2,400/=
+                                      </span>
+                                          </h3>
+                                        </div>
+                                        <div class="small-3 medium-3 large-3 column">
+                                          <h4>six pack</h4>
+                                          <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                      
+                                        </div>
+                                      </div> 
+                    
+                                    </div>
+                    <div class="panel clear">
+                      <span class="left">
+                          SUBTOTAL:
+                      </span>
+                      <span class="right">
+                          6,000.00/=
+                      </span>
+                    </div>
+                    
+
+                          </div>
+                      </div>
+                    
+                          </div>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="panel2">
+              <div class="raw">
+                  <div class="small-12 medium-6 large-6 column">
+                      <input type="text" placeholder="What’s your name?" />
+                      <input type="text" placeholder="What’s your mobile no.?" />
+                      <input type="text" placeholder="Where are you located?" />
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50655.125815193926!2d36.78018023224986!3d-1.2681037462845643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1526994818705" width="550" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <div class="small-12 medium-6 large-6 column">
+            
+                      <div class="f-dropdown content">
+                          <div class="row">
+                              <div class="small-12 medium-12 large-12 column">
+                                  <h1>
+                                      REVIEW YOUR CART
+                                    </h1>
+                                    <h2>FREE DELIVERY</h2>
+                                    <div class="containner_drop">
+                                    <div class="row border-bottom">
+                                      <div class="small-3 medium-3 large-3 column">
+                                        <img src="img/dropDown/dropDown01.png">
+                                      </div>
+                                      <div class="small-6 medium-6 large-6 column">
+                                        <h3>
+                                          HEINEKEN
+                                    <span>
+                                      2,400/=
+                                    </span>
+                                        </h3>
+                                      </div>
+                                      <div class="small-3 medium-3 large-3 column">
+                                        <h4>six pack</h4>
+                                        <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                    
+                                      </div>
+                                    </div>
+                        
+                        
+                        
+                        
+                                    <div class="row border-bottom">
+                                        <div class="small-3 medium-3 large-3 column">
+                                          <img src="img/dropDown/dropDown01.png">
+                                        </div>
+                                        <div class="small-6 medium-6 large-6 column">
+                                          <h3>
+                                            HEINEKEN
+                                      <span>
+                                        2,400/=
+                                      </span>
+                                          </h3>
+                                        </div>
+                                        <div class="small-3 medium-3 large-3 column">
+                                          <h4>six pack</h4>
+                                          <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                      
+                                        </div>
+                                      </div>
+                        
+                                      <div class="row border-bottom">
+                                          <div class="small-3 medium-3 large-3 column">
+                                            <img src="img/dropDown/dropDown01.png">
+                                          </div>
+                                          <div class="small-6 medium-6 large-6 column">
+                                            <h3>
+                                              HEINEKEN
+                                        <span>
+                                          2,400/=
+                                        </span>
+                                            </h3>
+                                          </div>
+                                          <div class="small-3 medium-3 large-3 column">
+                                            <h4>six pack</h4>
+                                            <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                        
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="row border-bottom">
+                                            <div class="small-3 medium-3 large-3 column">
+                                              <img src="img/dropDown/dropDown01.png">
+                                            </div>
+                                            <div class="small-6 medium-6 large-6 column">
+                                              <h3>
+                                                HEINEKEN
+                                          <span>
+                                            2,400/=
+                                          </span>
+                                              </h3>
+                                            </div>
+                                            <div class="small-3 medium-3 large-3 column">
+                                              <h4>six pack</h4>
+                                              <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                                          
+                                            </div>
+                                          </div> 
+                        
+                                        </div>
+                        <div class="panel clear">
+                          <span class="left">
+                              SUBTOTAL:
+                          </span>
+                          <span class="right">
+                              6,000.00/=
+                          </span>
+                        </div>
+                        
+
+                              </div>
+                          </div>
+                        
+                              </div>
+            
+            
+                  </div>
+                </div>
+
+          </div>
+          <div class="content" id="panel3">
+
+              <div class="raw">
+                  <div class="small-12 medium-6 large-6 column">
+                      <input type="text" placeholder="What’s your name?" />
+                      <input type="text" placeholder="What’s your mobile no.?" />
+                      <input type="text" placeholder="Where are you located?" />
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50655.125815193926!2d36.78018023224986!3d-1.2681037462845643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1526994818705" width="550" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+               
+                  <div class="small-12 medium-6 large-6 columns">
+            
+                      <div class="f-dropdown content">
+                          <ul class="accordion" data-accordion>
+                              <li class="accordion-navigation">
+                                <a href="#panel1a"><img src="img/accordion-logo/mpesa.png"></a>
+                                <div id="panel1a" class="content active">
+                                   <h1>
+                                      Go to M-PESA on your phone 
+                                   </h1> 
+                                   <ol>
+                                      <li>Select Lipa na Mpesa option </li>
+                                      <li>Select Pay Bill option</li>
+                                      <li>Enter Business no. 450588</li>
+                                      <li>Enter Account no. 55323</li>
+                                      <li>Enter the Amount Ksh. 6,960/=</li>
+                                      <li>Enter your M-PESA PIN and Send </li>
+                                    </ol>  
+                                    <h2>
+                                        LOCATION
+                                    </h2> 
+                                    <h3>
+                                        KOSE HEIGHTS,
+                                    </h3> 
+                                    <h4>
+                                        HURLINGHAM ARGWINGS 
+                                        KODHEK
+                                    </h4>                     
+                                   </div>
+                              </li>
+                              <li class="accordion-navigation">
+                                <a href="#panel2a"><img src="img/accordion-logo/airtel.png"></a>
+                                <div id="panel2a" class="content">
+                                  Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </li>
+                              <li class="accordion-navigation">
+                                <a href="#panel3a"><img src="img/accordion-logo/equitel.png"></a>
+                                <div id="panel3a" class="content">
+                                  Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                              </li>
+
+                              <li class="accordion-navigation">
+                                  <a href="#panel4a"><img src="img/accordion-logo/T-cash.png"></a>
+                                  <div id="panel4a" class="content">
+                                    Panel 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                  </div>
+                                </li>
+                            </ul>
+                        
+                              </div>
+            
+            
+                  </div>
+                </div>
+          </div>
+
+        </div>    
+
+
+
+
+
+ 
+    <a class="close-reveal-modal" aria-label="Close"><img src="img/close.png"></a>
+  </div>
+
+ 
+
+
+  <!-- check out pop up   end-->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
