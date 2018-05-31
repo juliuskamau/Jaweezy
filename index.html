@@ -1,794 +1,589 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaweezy | Welcome</title>
-  <!-- Favicon ================== -->
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/carousel.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/lightslider.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body class="background_blue">
-<header>
-  <div class="row">
-    <div class="medium-1 small-1 large-1  column">
-      <img alt="jaweezy" src="img/logo.png">
-    </div>
-    <div class="medium-10 small-10 large-10  column">
-        <div class="search">
-            <button type="submit" class="searchButton">
-                <i class="fa fa-search"></i>
-             </button>
-   
-        <input type="text" placeholder="what would you like to order?" />
-
-      </div>
-    </div>
-    <div class="medium-1 small-1 large-1  column">
-      <div class="cut">
-        <i class="fa fa-cart-plus"data-dropdown="drop2" aria-controls="drop2" aria-expanded="false"></i>
-        <span class="background_pink">10</span>
-      </div>
-    </div>
-  </div>
-</header>
-
-    <section id="banner">
- 
-
-   
-        <div class="ws_images">
-             <ul>
-               <li>
-              <a href="#">
-                <img src="img/banner/banner02.png" alt="slider html" title="BEER <span>“He was a wise man who invented beer.”</span>" id="wows1_0"/>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Jaweezy | Welcome</title><!-- Favicon ================== -->
+  <link href="img/favicon.png" rel="shortcart icon" type="image/x-icon">
+  <link href="css/foundation.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <script src="js/vendor/modernizr.js">
+  </script>
+</head>
+<body class="background_blue">
+  <!--- mobile search input-->
+  <section class="search-overlay">
+    <form class="search-form">
+      <a class="btn-search searchClose" href="#"><i aria-hidden="true" class="fa fa-2x fa-times"></i></a> <input class="search" placeholder="What are you looking for?" type="search">
+    </form>
+  </section><!--mobile search input end-->
+  <div class="off-canvas-wrap" data-offcanvas="">
+    <div class="inner-wrap">
+      <!--mobile menu start-->
+      <aside class="left-off-canvas-menu">
+        <ul class="tabs vertical menu" data-tab="" role="tablist">
+          <li class="tab-title active" role="presentation">
+            <a aria-controls="panel2-1" aria-selected="true" href="#panel2-1" role="tab" tabindex="0">HOME</a>
+          </li>
+          <li class="tab-title" role="presentation">
+            <a aria-controls="panel2-2" aria-selected="false" href="#panel2-2" role="tab" tabindex="0">BEER</a>
+          </li>
+          <li class="tab-title" role="presentation">
+            <a aria-controls="panel2-3" aria-selected="false" href="#panel2-3" role="tab" tabindex="0">WHISKEY</a>
+          </li>
+          <li class="tab-title" role="presentation">
+            <a aria-controls="panel2-4" aria-selected="false" href="#panel2-4" role="tab" tabindex="0">WINE</a>
+          </li>
+          <li class="tab-title" role="presentation">
+            <a aria-controls="panel2-5" aria-selected="false" href="#panel2-5" role="tab" tabindex="0">RUM</a>
+          </li>
+          <li class="tab-title" role="presentation">
+            <a aria-controls="panel2-6" aria-selected="false" href="#panel2-6" role="tab" tabindex="0">VODKA</a>
+          </li>
+        </ul>
+      </aside><!--mobile menu end-->
+      <!--sticky header start-->
+      <div class="sticky">
+        <header data-topbar>
+          <div class="row">
+            <div class="medium-5 small-5 large-1 column show-for-medium-down">
+              <a class="left-off-canvas-toggle" href="#"><i class="fa fa-bars"></i></a> <a class="btn-search -blue js-searchOpen" href="#"><i aria-hidden="true" class="fa fa-lg fa-search"></i></a>
+            </div>
+            <div class="medium-4 small-4 large-1 column">
+              
+              <a href="index.html" title="« Back to home">
+                <img alt="jaweezy" class="logo" src="img/logo.png">
               </a>
+            </div>
+            <div class="medium-9 small-4 large-10 column hide-for-medium-down">
+              <div class="search">
+                <button class="searchButton" type="submit"><i class="fa fa-search"></i></button> <input placeholder="what would you like to order?" type="text">
+              </div>
+            </div>
+            <div class="medium-3 small-3 large-1 column">
+              <div class="cart">
+                <i aria-controls="shoppingbasket" class="fa fa-cart-plus" data-dropdown="shoppingbasket"></i> <span class="background_pink">10</span>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div><!--sticky header end-->
+      <!--sticky banner start-->
+      <section id="banner">
+        <div class="ws_images">
+          <ul>
+            <li>
+              <a href="#"><img alt="slider html" id="wows1_0" src="img/banner/banner01.png" title=""></a>
             </li>
             <li>
-                <a href="#">
-                  <img src="img/banner/banner02.png" alt="slider html" title="BEER <span>“He was a wise man who invented beer.”</span>" id="wows1_0"/>
-                </a>
-              </li>
-     
-               </ul>
-         </div>
-  
-
-
-    </section>
-
-<section class="product row">
-    <div class="large-12 columns">
-    <ul class="tabs" data-tab role="tablist">
-        <li class="tab-title active" role="presentation"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1">HOME</a></li>
-        <li class="tab-title" role="presentation"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">BEER</a></li>
-        <li class="tab-title" role="presentation"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">WHISKEY</a></li>
-        <li class="tab-title" role="presentation"><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4">WINE</a></li>
-        <li class="tab-title" role="presentation"><a href="#panel2-5" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-5">RUM</a></li>
-        <li class="tab-title" role="presentation"><a href="#panel2-6" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-6">VODKA</a></li>
-      </ul>
-      <div class="tabs-content">
-        <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
-        <div class="row">
-          <div class="small-12 medium-3 large-3 column">
-            <div class="product_wrap">
-              <div class="gradient_color">
-                  <span class="title">HEINEKEN</span>
-              </div>
-                <img alt="jaweezy" src="img/product/product01.png">
-                <div class="icons">
-                    <span class="left"data-reveal-id="myModal">
-                      <i class="fa fa-exclamation-circle"></i>
-                    </span>
-                    <span class="right">
-                        <i class="fa fa-plus-circle"></i>
-                    </span>
-                  </div>
-              <div class="product_info">
-<span class="title">HEINEKEN</span>
-<span class="quantity">six pack</span>
-<span class="price">1,020</span>
-</div>
-</div>
-<a href="#" class="button">
-    ADD TO CART
-</a>
-</div>
-          <div class="small-12 medium-3 large-3 column">
-              <div class="product_wrap">
-                <div class="gradient_color">
-                    <span class="title">HEINEKEN</span>
+              <a href="#"><img alt="slider html" id="wows1_0" src="img/banner/banner02.png" title="BEER &lt;span&gt;“He was a wise man &lt;br&gt; who invented beer.”&lt;/span&gt;"></a>
+            </li>
+          </ul>
+        </div>
+      </section><!--sticky banner end-->
+      <!-- product item start -->
+      <section class="product row">
+        <div class="large-12 columns">
+          <ul class="tabs hide-for-medium-down row" data-tab="" role="tablist">
+            <li class="tab-title active small-2 column" role="presentation">
+              <a class="button"aria-controls="panel2-1" aria-selected="true" href="#panel2-1" role="tab" tabindex="0">HOME</a>
+            </li>
+            <li class="tab-title small-2 column" role="presentation">
+              <a class="button" aria-controls="panel2-2" aria-selected="false" href="#panel2-2" role="tab" tabindex="0">BEER</a>
+            </li>
+            <li class="tab-title small-2 column" role="presentation">
+              <a class="button" aria-controls="panel2-3" aria-selected="false" href="#panel2-3" role="tab" tabindex="0">WHISKEY</a>
+            </li>
+            <li class="tab-title small-2 column" role="presentation">
+              <a class="button" aria-controls="panel2-4" aria-selected="false" href="#panel2-4" role="tab" tabindex="0">WINE</a>
+            </li>
+            <li class="tab-title small-2 column" role="presentation">
+              <a class="button" aria-controls="panel2-5" aria-selected="false" href="#panel2-5" role="tab" tabindex="0">RUM</a>
+            </li>
+            <li class="tab-title small-2 column" role="presentation">
+              <a class="button" aria-controls="panel2-6" aria-selected="false" href="#panel2-6" role="tab" tabindex="0">VODKA</a>
+            </li>
+          </ul>
+          
+          <div class="tabs-content">
+            <section aria-hidden="false" class="content active" id="panel2-1" role="tabpanel">
+              <div class="sort-wrapper">
+              <div class="row">
+                <div class="small-6 medium-6 large-9 column">
+                  <h1>GRAB A BEER</h1>
                 </div>
-                  <img alt="jaweezy" src="img/product/product01.png">
-                <div class="product_info">
-  <span class="title">HEINEKEN</span>
-  <span class="quantity">six pack</span>
-  <span class="price">1,020</span>
+                <div class="small-6 medium-6 large-3 column">
+                    <label>
+                        Sort by:
+                      </label>
+                      <select class="select-wrapper">
+                          <option value="husker">Husker</option>
+                          <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                          <option value="apollo">Apollo</option>
+                        </select>
                 </div>
               </div>
-              <a href="#" class="button">
-                  ADD TO CART
-              </a>
             </div>
-            <div class="small-12 medium-3 large-3 column">
-                <div class="product_wrap">
-                  <div class="gradient_color">
-                      <span class="title">HEINEKEN</span>
-                  </div>
-                    <img alt="jaweezy" src="img/product/product01.png">
-                  <div class="product_info">
-    <span class="title">HEINEKEN</span>
-    <span class="quantity">six pack</span>
-    <span class="price">1,020</span>
-                  </div>
-                </div>
-                <a href="#" class="button">
-                    ADD TO CART
-                </a>
-              </div>
-              <div class="small-12 medium-3 large-3 column">
+              <div class="row">
+                <div class="small-12 medium-6 large-3 column">
                   <div class="product_wrap">
                     <div class="gradient_color">
-                        <span class="title">HEINEKEN</span>
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="icons">
+                      <span class="left" data-reveal-id="ModalProductItem01"><i class="fa fa-exclamation-circle"></i></span> <span class="right"><i class="fa fa-plus-circle"></i></span>
                     </div>
-                      <img alt="jaweezy" src="img/product/product01.png">
                     <div class="product_info">
-      <span class="title">HEINEKEN</span>
-      <span class="quantity">six pack</span>
-      <span class="price">1,020</span>
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
                     </div>
-                  </div>
-                  <a href="#" class="button">
-                      ADD TO CART
-                  </a>
+                  </div><a class="button" href="#">ADD TO CART</a>
                 </div>
-
-                <div class="small-12 medium-3 large-3 column">
-                    <div class="product_wrap">
-                      <div class="gradient_color">
-                          <span class="title">HEINEKEN</span>
-                      </div>
-                        <img alt="jaweezy" src="img/product/product01.png">
-                      <div class="product_info">
-        <span class="title">HEINEKEN</span>
-        <span class="quantity">six pack</span>
-        <span class="price">1,020</span>
-                      </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
                     </div>
-                    <a href="#" class="button">
-                        ADD TO CART
-                    </a>
-                  </div>
-                  <div class="small-12 medium-3 large-3 column">
-                      <div class="product_wrap">
-                        <div class="gradient_color">
-                            <span class="title">HEINEKEN</span>
-                        </div>
-                          <img alt="jaweezy" src="img/product/product01.png">
-                        <div class="product_info">
-          <span class="title">HEINEKEN</span>
-          <span class="quantity">six pack</span>
-          <span class="price">1,020</span>
-                        </div>
-                      </div>
-                      <a href="#" class="button">
-                          ADD TO CART
-                      </a>
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
                     </div>
-                    <div class="small-12 medium-3 large-3 column">
-                        <div class="product_wrap">
-                          <div class="gradient_color">
-                              <span class="title">HEINEKEN</span>
-                          </div>
-                            <img alt="jaweezy" src="img/product/product01.png">
-                          <div class="product_info">
-            <span class="title">HEINEKEN</span>
-            <span class="quantity">six pack</span>
-            <span class="price">1,020</span>
-                          </div>
-                        </div>
-                        <a href="#" class="button">
-                            ADD TO CART
-                        </a>
-                      </div>
-                      <div class="small-12 medium-3 large-3 column">
-                          <div class="product_wrap">
-                            <div class="gradient_color">
-                                <span class="title">HEINEKEN</span>
-                            </div>
-                              <img alt="jaweezy" src="img/product/product01.png">
-                            <div class="product_info">
-              <span class="title">HEINEKEN</span>
-              <span class="quantity">six pack</span>
-              <span class="price">1,020</span>
-                            </div>
-                          </div>
-                          <a href="#" class="button">
-                              ADD TO CART
-                          </a>
-                        </div>
-        </div>
-
-        </section>
-        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
-          <h2>Second panel content goes here...</h2>
-        </section>
-        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
-          <h2>Third panel content goes here...</h2>
-        </section>
-        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
-          <h2>Fourth panel content goes here...</h2>
-        </section>
-
-        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-5">
-            <h2>Fourth panel content goes here...</h2>
-          </section>
-
-          <section role="tabpanel" aria-hidden="true" class="content" id="panel2-6">
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
+                    </div>
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
+                    </div>
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
+                    </div>
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
+                    </div>
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+                <div class="small-12 medium-6 large-3 column">
+                  <div class="product_wrap">
+                    <div class="gradient_color">
+                      <span class="title">HEINEKEN</span>
+                    </div><img alt="jaweezy" src="img/product/product01.png">
+                    <div class="product_info">
+                      <span class="title">HEINEKEN</span> <span class="quantity">six pack</span> <span class="price">1,020</span>
+                    </div>
+                  </div><a class="button" href="#">ADD TO CART</a>
+                </div>
+              </div>
+            </section>
+            <section aria-hidden="true" class="content" id="panel2-2" role="tabpanel">
+              <h2>Second panel content goes here...</h2>
+            </section>
+            <section aria-hidden="true" class="content" id="panel2-3" role="tabpanel">
+              <h2>Third panel content goes here...</h2>
+            </section>
+            <section aria-hidden="true" class="content" id="panel2-4" role="tabpanel">
               <h2>Fourth panel content goes here...</h2>
             </section>
-      </div>
-    </div>
-</section>
-
-
-
-<footer class="background_dark_blue">
-<p>
-    © 2018 Jaweezy. All Rights Reserved. <a href="#">Terms And Conditions </a> | <a href="#">Privacy Policy </a>
-</p>
-</footer>
-
- <!-- pop up  start-->
-
- <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-    
-
-    <div class="row">
-      <div class="large-5 small-12 medium-5 column">
-          <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-              <li data-thumb="img/popupCarousel/popup01.png"> 
-                  <img src="img/popupCarousel/popup01.png" />
-                   </li>
-                   <li data-thumb="img/popupCarousel/popup02.png"> 
-                    <img src="img/popupCarousel/popup02.png" />
-                     </li>
-             
-          </ul>   
-          <div class="center clear margin-top-10">
-            <a href="#" class="button">
-              ADD TO CART
-          </a>
+            <section aria-hidden="true" class="content" id="panel2-5" role="tabpanel">
+              <h2>Fourth panel content goes here...</h2>
+            </section>
+            <section aria-hidden="true" class="content" id="panel2-6" role="tabpanel">
+              <h2>Fourth panel content goes here...</h2>
+            </section>
           </div>
-
-
-      </div>
-      <div class="large-7 small-12 medium-7 column">
-        <h1 class="modalTitle">JAMESON IRISH WHISKEY</h1>
-        <h2>ABV 35%<hr></h2>
-        <h2 class="modalSubTitle">THE JAMESON IRISH WHISKY STORY</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-<br>
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <h2 class="modalSubTitle">PERFECT SERVE<hr></h2>
-      <div class="row">
-        <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_glass.png">
-          <h3>STRAIGHT</h3>
-          <p>Enjoy with nothing added</p>
         </div>
-        <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_glass.png">
-          <h3>STRAIGHT</h3>
-          <p>Enjoy with nothing added</p>
-        </div>
-        <div class="large-4 small-4 medium-4 column center">
-            <img src="img/product/product_glass.png">
-          <h3>STRAIGHT</h3>
-          <p>Enjoy with nothing added</p>
-        </div>
-      </div>
-
-   
-      <h2 class="modalSubTitle">PEOPLE ALSO VIEWED<hr></h2>
-
-      <div class="row wine">
-        <div class="large-4 small-4 medium-4 column center">
-          <img src="img/product/product_wine.png">
-          <p>Enjoy with nothing added</p>
-          <h4>4,500/=</h4>
-        </div>
-        <div class="large-4 small-4 medium-4 column center">
-          <img src="img/product/product_wine.png">
-          <p>Enjoy with nothing added</p>
-          <h4>4,500/=</h4>
-        </div>
-        <div class="large-4 small-4 medium-4 column center">
-          <img src="img/product/product_wine.png">
-          <p>Enjoy with nothing added</p>
-          <h4>4,500/=</h4>
-        </div>
-      </div>
- 
-      <h2 class="modalSubTitle">PEOPLE WERE ALSO INTERESTED IN<hr></h2>
-
-      <div class="row wine">
-        <div class="large-4 small-4 medium-4 column center">
-          <img src="img/product/product_wine.png">
-          <p>Enjoy with nothing added</p>
-          <h4>4,500/=</h4>
-        </div>
-        <div class="large-4 small-4 medium-4 column center">
-          <img src="img/product/product_wine.png">
-          <p>Enjoy with nothing added</p>
-          <h4>4,500/=</h4>
-        </div>
-        <div class="large-4 small-4 medium-4 column center">
-          <img src="img/product/product_wine.png">
-          <p>Enjoy with nothing added</p>
-          <h4>4,500/=</h4>
-        </div>
-      </div>
-
-
-      </div>
-    </div>
-
-<a class="close-reveal-modal" aria-label="Close">
-  <img src="img/close.png">
-</a>
-  </div>
-  <!-- pop up  end-->
-      <!-- drop down content start -->
-<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-  <div class="row">
-      <div class="small-12 medium-12 large-12 column">
-          <h1>
-              REVIEW YOUR CART
-            </h1>
+      </section><!-- product item end --><!-- footer start  -->
+      <footer class="background_dark_blue">
+        <p class="left">© 2018 Jaweezy. All Rights Reserved. <a href="#">Terms And Conditions</a> | <a href="#">Privacy Policy</a></p>
+        <p class="right copy_right">© 2018 - Made with <i class="fa fa-heart-o bounceIn animated infinite"></i> by <a class="notoSerif italic fw600" href="https://www.zilojo.com/" target="_blank">Zilojo Limited</a>.</p>
+      </footer><!-- footer end --><!-- Product item popup  start-->
+      <div aria-hidden="true" aria-labelledby="modalTitle" class="reveal-modal" data-reveal="" id="ModalProductItem01" role="dialog">
+        <div class="row">
+          <div class="large-5 small-12 medium-5 column">
+            <ul class="gallery list-unstyled cS-hidden" id="image-gallery">
+              <li data-thumb="img/popupCarousel/popup01.png"><img src="img/popupCarousel/popup01.png"></li>
+              <li data-thumb="img/popupCarousel/popup02.png"><img src="img/popupCarousel/popup02.png"></li>
+            </ul>
+            <div class="center clear margin-top-10">
+              <a class="button" href="#">ADD TO CART</a>
+            </div>
+          </div>
+          <div class="large-7 small-12 medium-7 column">
+            <h1 class="modalTitle">JAMESON IRISH WHISKEY</h1>
+            <h2>ABV 35%</h2>
+            <hr>
+            <h2></h2>
+            <h2 class="modalSubTitle">THE JAMESON IRISH WHISKY STORY</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h2 class="modalSubTitle">PERFECT SERVE</h2>
+            <hr>
+            <h2 class="modalSubTitle"></h2>
+            <div class="row">
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_glass.png">
+                <h3>STRAIGHT</h3>
+                <p>Enjoy with nothing added</p>
+              </div>
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_glass.png">
+                <h3>STRAIGHT</h3>
+                <p>Enjoy with nothing added</p>
+              </div>
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_glass.png">
+                <h3>STRAIGHT</h3>
+                <p>Enjoy with nothing added</p>
+              </div>
+            </div>
+            <h2 class="modalSubTitle">PEOPLE ALSO VIEWED</h2>
+            <hr>
+            <h2 class="modalSubTitle"></h2>
+            <div class="row wine">
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_wine.png">
+                <p>Enjoy with nothing added</p>
+                <h4>4,500/=</h4>
+              </div>
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_wine.png">
+                <p>Enjoy with nothing added</p>
+                <h4>4,500/=</h4>
+              </div>
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_wine.png">
+                <p>Enjoy with nothing added</p>
+                <h4>4,500/=</h4>
+              </div>
+            </div>
+            <h2 class="modalSubTitle">PEOPLE WERE ALSO INTERESTED IN</h2>
+            <hr>
+            <h2 class="modalSubTitle"></h2>
+            <div class="row wine">
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_wine.png">
+                <p>Enjoy with nothing added</p>
+                <h4>4,500/=</h4>
+              </div>
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_wine.png">
+                <p>Enjoy with nothing added</p>
+                <h4>4,500/=</h4>
+              </div>
+              <div class="large-4 small-4 medium-4 column center">
+                <img src="img/product/product_wine.png">
+                <p>Enjoy with nothing added</p>
+                <h4>4,500/=</h4>
+              </div>
+            </div>
+          </div>
+        </div><a aria-label="Close" class="close-reveal-modal"><img src="img/close.png"></a>
+      </div><!-- Product item popup  end-->
+      <!-- shopping basket dropdown content start -->
+      <div class="f-dropdown content" data-dropdown-content="" id="shoppingbasket" tabindex="-1">
+        <div class="row">
+          <div class="small-12 medium-12 large-12 column">
+            <h1>REVIEW YOUR CART</h1>
             <h2>FREE DELIVERY</h2>
             <div class="containner_drop">
-            <div class="row border-bottom">
-              <div class="small-3 medium-3 large-3 column">
-                <img src="img/dropDown/dropDown01.png">
+              <div class="row border-bottom">
+                <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                <div class="small-6 medium-6 large-6 column">
+                  <h3>HEINEKEN <span>2,400/=</span></h3>
+                </div>
+                <div class="small-3 medium-3 large-3 column">
+                  <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                </div>
               </div>
-              <div class="small-6 medium-6 large-6 column">
-                <h3>
-                  HEINEKEN
-            <span>
-              2,400/=
-            </span>
-                </h3>
+              <div class="row border-bottom">
+                <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                <div class="small-6 medium-6 large-6 column">
+                  <h3>HEINEKEN <span>2,400/=</span></h3>
+                </div>
+                <div class="small-3 medium-3 large-3 column">
+                  <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                </div>
               </div>
-              <div class="small-3 medium-3 large-3 column">
-                <h4>six pack</h4>
-                <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-            
+              <div class="row border-bottom">
+                <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                <div class="small-6 medium-6 large-6 column">
+                  <h3>HEINEKEN <span>2,400/=</span></h3>
+                </div>
+                <div class="small-3 medium-3 large-3 column">
+                  <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                </div>
+              </div>
+              <div class="row border-bottom">
+                <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                <div class="small-6 medium-6 large-6 column">
+                  <h3>HEINEKEN <span>2,400/=</span></h3>
+                </div>
+                <div class="small-3 medium-3 large-3 column">
+                  <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                </div>
               </div>
             </div>
-
-
-
-
-            <div class="row border-bottom">
-                <div class="small-3 medium-3 large-3 column">
-                  <img src="img/dropDown/dropDown01.png">
-                </div>
-                <div class="small-6 medium-6 large-6 column">
-                  <h3>
-                    HEINEKEN
-              <span>
-                2,400/=
-              </span>
-                  </h3>
-                </div>
-                <div class="small-3 medium-3 large-3 column">
-                  <h4>six pack</h4>
-                  <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-              
-                </div>
-              </div>
-
-              <div class="row border-bottom">
-                  <div class="small-3 medium-3 large-3 column">
-                    <img src="img/dropDown/dropDown01.png">
-                  </div>
-                  <div class="small-6 medium-6 large-6 column">
-                    <h3>
-                      HEINEKEN
-                <span>
-                  2,400/=
-                </span>
-                    </h3>
-                  </div>
-                  <div class="small-3 medium-3 large-3 column">
-                    <h4>six pack</h4>
-                    <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                
-                  </div>
-                </div>
-                
-                <div class="row border-bottom">
-                    <div class="small-3 medium-3 large-3 column">
-                      <img src="img/dropDown/dropDown01.png">
-                    </div>
-                    <div class="small-6 medium-6 large-6 column">
-                      <h3>
-                        HEINEKEN
-                  <span>
-                    2,400/=
-                  </span>
-                      </h3>
-                    </div>
-                    <div class="small-3 medium-3 large-3 column">
-                      <h4>six pack</h4>
-                      <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                  
-                    </div>
-                  </div> 
-
-                </div>
-<div class="panel clear">
-  <span class="left">
-      SUBTOTAL:
-  </span>
-  <span class="right">
-      6,000.00/=
-  </span>
-</div>
-
-<a href="#" class="button"data-reveal-id="firstModal">
-    CHECK OUT
-</a>
-      </div>
-  </div>
-
-      </div>
-      <!-- drop down content end -->
-
- <!-- check out pop up  start-->
- <div id="firstModal" class="reveal-modal background-transparent" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
-    
-<div class="center">
-    <ul class="tabs row" data-tab>
-        <li class="tab-title active small-4 column">
-          <a href="#panel1" title="Cart">&nbsp;</a>
-        </li>
-        <li class="tab-title small-4 column">
-      
-          <a href="#panel2" title="Customer Info">&nbsp;</a>
-        </li>
-        <li class="tab-title small-4 column">
-       
-          <a href="#panel3" title="Payment method">&nbsp;</a>
-        </li>
-      
-      </ul>
-
-    </div>
-
-      <div class="tabs-content">
+            <div class="panel clear">
+              <span class="left">SUBTOTAL:</span> <span class="right">6,000.00/=</span>
+            </div><a class="button" data-reveal-id="checkoutbutton" href="#">CHECK OUT</a>
+          </div>
+        </div>
+      </div><!-- shopping basket dropdown content end -->
+      <!-- check out pop up  start-->
+      <div aria-hidden="true" aria-labelledby="checkoutbuttonTitle" class="reveal-modal background-transparent" data-reveal="" id="checkoutbutton" role="dialog">
+        <div class="center">
+          <!-- steps links start here-->
+          <ul class="tabs row" data-tab="">
+            <li class="tab-title active small-4 column">
+              <a href="#panel1" title="Cart">&nbsp;</a>
+            </li>
+            <li class="tab-title small-4 column">
+              <a href="#panel2" title="Customer Info">&nbsp;</a>
+            </li>
+            <li class="tab-title small-4 column">
+              <a href="#panel3" title="Payment method">&nbsp;</a>
+            </li>
+          </ul><!-- steps links end here-->
+        </div><!-- steps wrapper /*tabs-content*/ start-->
+        <div class="tabs-content">
+          <!-- steps one /*cart*/ content start here-->
           <div class="content active" id="panel1">
             <div class="row">
-              <div class="small-12 medium-6 large-6 column"></div>
+              <div class="small-12 medium-6 large-6 column">&nbsp;</div>
               <div class="small-12 medium-6 large-6 column">
-                  <div class="f-dropdown content">
-                      <div class="row">
-                          <div class="small-12 medium-12 large-12 column">
-                              <h1>
-                                  REVIEW YOUR CART
-                                </h1>
-                                <h2>FREE DELIVERY</h2>
-                                <div class="containner_drop">
-                                <div class="row border-bottom">
-                                  <div class="small-3 medium-3 large-3 column">
-                                    <img src="img/dropDown/dropDown01.png">
-                                  </div>
-                                  <div class="small-6 medium-6 large-6 column">
-                                    <h3>
-                                      HEINEKEN
-                                <span>
-                                  2,400/=
-                                </span>
-                                    </h3>
-                                  </div>
-                                  <div class="small-3 medium-3 large-3 column">
-                                    <h4>six pack</h4>
-                                    <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                
-                                  </div>
-                                </div>
-                    
-                    
-                    
-                    
-                                <div class="row border-bottom">
-                                    <div class="small-3 medium-3 large-3 column">
-                                      <img src="img/dropDown/dropDown01.png">
-                                    </div>
-                                    <div class="small-6 medium-6 large-6 column">
-                                      <h3>
-                                        HEINEKEN
-                                  <span>
-                                    2,400/=
-                                  </span>
-                                      </h3>
-                                    </div>
-                                    <div class="small-3 medium-3 large-3 column">
-                                      <h4>six pack</h4>
-                                      <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                  
-                                    </div>
-                                  </div>
-                    
-                                  <div class="row border-bottom">
-                                      <div class="small-3 medium-3 large-3 column">
-                                        <img src="img/dropDown/dropDown01.png">
-                                      </div>
-                                      <div class="small-6 medium-6 large-6 column">
-                                        <h3>
-                                          HEINEKEN
-                                    <span>
-                                      2,400/=
-                                    </span>
-                                        </h3>
-                                      </div>
-                                      <div class="small-3 medium-3 large-3 column">
-                                        <h4>six pack</h4>
-                                        <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                    
-                                      </div>
-                                    </div>
-                                    
-                                    <div class="row border-bottom">
-                                        <div class="small-3 medium-3 large-3 column">
-                                          <img src="img/dropDown/dropDown01.png">
-                                        </div>
-                                        <div class="small-6 medium-6 large-6 column">
-                                          <h3>
-                                            HEINEKEN
-                                      <span>
-                                        2,400/=
-                                      </span>
-                                          </h3>
-                                        </div>
-                                        <div class="small-3 medium-3 large-3 column">
-                                          <h4>six pack</h4>
-                                          <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                      
-                                        </div>
-                                      </div> 
-                    
-                                    </div>
-                    <div class="panel clear">
-                      <span class="left">
-                          SUBTOTAL:
-                      </span>
-                      <span class="right">
-                          6,000.00/=
-                      </span>
-                    </div>
-                    
-
+                <div class="f-dropdown content">
+                  <div class="row">
+                    <div class="small-12 medium-12 large-12 column">
+                      <h1>REVIEW YOUR CART</h1>
+                      <h2>FREE DELIVERY</h2>
+                      <div class="containner_drop">
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
                           </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
+                          </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
+                          </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
+                          </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
                       </div>
-                    
-                          </div>
+                      <div class="panel clear">
+                        <span class="left">SUBTOTAL:</span> <span class="right">6,000.00/=</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </div><!-- steps one /*cart*/ content end here-->
+          <!-- steps two /*Customer Info*/ content start here-->
           <div class="content" id="panel2">
-              <div class="raw">
-                  <div class="small-12 medium-6 large-6 column">
-                      <input type="text" placeholder="What’s your name?" />
-                      <input type="text" placeholder="What’s your mobile no.?" />
-                      <input type="text" placeholder="Where are you located?" />
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50655.125815193926!2d36.78018023224986!3d-1.2681037462845643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1526994818705" width="550" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
-                  <div class="small-12 medium-6 large-6 column">
-            
-                      <div class="f-dropdown content">
-                          <div class="row">
-                              <div class="small-12 medium-12 large-12 column">
-                                  <h1>
-                                      REVIEW YOUR CART
-                                    </h1>
-                                    <h2>FREE DELIVERY</h2>
-                                    <div class="containner_drop">
-                                    <div class="row border-bottom">
-                                      <div class="small-3 medium-3 large-3 column">
-                                        <img src="img/dropDown/dropDown01.png">
-                                      </div>
-                                      <div class="small-6 medium-6 large-6 column">
-                                        <h3>
-                                          HEINEKEN
-                                    <span>
-                                      2,400/=
-                                    </span>
-                                        </h3>
-                                      </div>
-                                      <div class="small-3 medium-3 large-3 column">
-                                        <h4>six pack</h4>
-                                        <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                    
-                                      </div>
-                                    </div>
-                        
-                        
-                        
-                        
-                                    <div class="row border-bottom">
-                                        <div class="small-3 medium-3 large-3 column">
-                                          <img src="img/dropDown/dropDown01.png">
-                                        </div>
-                                        <div class="small-6 medium-6 large-6 column">
-                                          <h3>
-                                            HEINEKEN
-                                      <span>
-                                        2,400/=
-                                      </span>
-                                          </h3>
-                                        </div>
-                                        <div class="small-3 medium-3 large-3 column">
-                                          <h4>six pack</h4>
-                                          <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                      
-                                        </div>
-                                      </div>
-                        
-                                      <div class="row border-bottom">
-                                          <div class="small-3 medium-3 large-3 column">
-                                            <img src="img/dropDown/dropDown01.png">
-                                          </div>
-                                          <div class="small-6 medium-6 large-6 column">
-                                            <h3>
-                                              HEINEKEN
-                                        <span>
-                                          2,400/=
-                                        </span>
-                                            </h3>
-                                          </div>
-                                          <div class="small-3 medium-3 large-3 column">
-                                            <h4>six pack</h4>
-                                            <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                        
-                                          </div>
-                                        </div>
-                                        
-                                        <div class="row border-bottom">
-                                            <div class="small-3 medium-3 large-3 column">
-                                              <img src="img/dropDown/dropDown01.png">
-                                            </div>
-                                            <div class="small-6 medium-6 large-6 column">
-                                              <h3>
-                                                HEINEKEN
-                                          <span>
-                                            2,400/=
-                                          </span>
-                                              </h3>
-                                            </div>
-                                            <div class="small-3 medium-3 large-3 column">
-                                              <h4>six pack</h4>
-                                              <input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
-                                          
-                                            </div>
-                                          </div> 
-                        
-                                        </div>
-                        <div class="panel clear">
-                          <span class="left">
-                              SUBTOTAL:
-                          </span>
-                          <span class="right">
-                              6,000.00/=
-                          </span>
-                        </div>
-                        
-
-                              </div>
+            <div class="raw">
+              <div class="small-12 medium-6 large-6 column">
+                <input placeholder="What’s your name?" type="text"> <input placeholder="What’s your mobile no.?" type="text"> <input placeholder="Where are you located?" type="text"> <iframe allowfullscreen frameborder="0" height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50655.125815193926!2d36.78018023224986!3d-1.2681037462845643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1526994818705" style="border:0" width="500"></iframe>
+              </div>
+              <div class="small-12 medium-6 large-6 column">
+                <div class="f-dropdown content">
+                  <div class="row">
+                    <div class="small-12 medium-12 large-12 column">
+                      <h1>REVIEW YOUR CART</h1>
+                      <h2>FREE DELIVERY</h2>
+                      <div class="containner_drop">
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
                           </div>
-                        
-                              </div>
-            
-            
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
+                          </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
+                          </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                        <div class="row border-bottom">
+                          <div class="small-3 medium-3 large-3 column"><img src="img/dropDown/dropDown01.png"></div>
+                          <div class="small-6 medium-6 large-6 column">
+                            <h3>HEINEKEN <span>2,400/=</span></h3>
+                          </div>
+                          <div class="small-3 medium-3 large-3 column">
+                            <h4>six pack</h4><input data-val="true" max="20" min="1" name="Weight" placeholder="1" type="number" value="0">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel clear">
+                        <span class="left">SUBTOTAL:</span> <span class="right">6,000.00/=</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-          </div>
+              </div>
+            </div>
+          </div><!-- steps two /*Customer Info*/ content end here-->
+          <!-- steps three /*Payment method*/ content start here-->
           <div class="content" id="panel3">
-
-              <div class="raw">
-                  <div class="small-12 medium-6 large-6 column">
-                      <input type="text" placeholder="What’s your name?" />
-                      <input type="text" placeholder="What’s your mobile no.?" />
-                      <input type="text" placeholder="Where are you located?" />
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50655.125815193926!2d36.78018023224986!3d-1.2681037462845643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1526994818705" width="550" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
-               
-                  <div class="small-12 medium-6 large-6 columns">
-            
-                      <div class="f-dropdown content">
-                          <ul class="accordion" data-accordion>
-                              <li class="accordion-navigation">
-                                <a href="#panel1a"><img src="img/accordion-logo/mpesa.png"></a>
-                                <div id="panel1a" class="content active">
-                                   <h1>
-                                      Go to M-PESA on your phone 
-                                   </h1> 
-                                   <ol>
-                                      <li>Select Lipa na Mpesa option </li>
-                                      <li>Select Pay Bill option</li>
-                                      <li>Enter Business no. 450588</li>
-                                      <li>Enter Account no. 55323</li>
-                                      <li>Enter the Amount Ksh. 6,960/=</li>
-                                      <li>Enter your M-PESA PIN and Send </li>
-                                    </ol>  
-                                    <h2>
-                                        LOCATION
-                                    </h2> 
-                                    <h3>
-                                        KOSE HEIGHTS,
-                                    </h3> 
-                                    <h4>
-                                        HURLINGHAM ARGWINGS 
-                                        KODHEK
-                                    </h4>                     
-                                   </div>
-                              </li>
-                              <li class="accordion-navigation">
-                                <a href="#panel2a"><img src="img/accordion-logo/airtel.png"></a>
-                                <div id="panel2a" class="content">
-                                  Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                              </li>
-                              <li class="accordion-navigation">
-                                <a href="#panel3a"><img src="img/accordion-logo/equitel.png"></a>
-                                <div id="panel3a" class="content">
-                                  Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                              </li>
-
-                              <li class="accordion-navigation">
-                                  <a href="#panel4a"><img src="img/accordion-logo/T-cash.png"></a>
-                                  <div id="panel4a" class="content">
-                                    Panel 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                  </div>
-                                </li>
-                            </ul>
-                        
-                              </div>
-            
-            
-                  </div>
+            <div class="raw">
+              <div class="small-12 medium-6 large-6 column">
+                <input placeholder="What’s your name?" type="text"> <input placeholder="What’s your mobile no.?" type="text"> <input placeholder="Where are you located?" type="text"> <iframe allowfullscreen frameborder="0" height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50655.125815193926!2d36.78018023224986!3d-1.2681037462845643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1526994818705" style="border:0" width="500"></iframe>
+              </div>
+              <div class="small-12 medium-6 large-6 columns">
+                <div class="f-dropdown content">
+                  <ul class="accordion" data-accordion="">
+                    <li class="accordion-navigation">
+                      <a href="#panel1a"><img src="img/accordion-logo/mpesa.png"></a>
+                      <div class="content active" id="panel1a">
+                        <h1>Go to M-PESA on your phone</h1>
+                        <ol>
+                          <li>Select Lipa na Mpesa option</li>
+                          <li>Select Pay Bill option</li>
+                          <li>Enter Business no. 450588</li>
+                          <li>Enter Account no. 55323</li>
+                          <li>Enter the Amount Ksh. 6,960/=</li>
+                          <li>Enter your M-PESA PIN and Send</li>
+                        </ol>
+                        <h2>LOCATION</h2>
+                        <h3>KOSE HEIGHTS,</h3>
+                        <h4>HURLINGHAM ARGWINGS KODHEK</h4>
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#panel2a"><img src="img/accordion-logo/airtel.png"></a>
+                      <div class="content" id="panel2a">
+                        Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#panel3a"><img src="img/accordion-logo/equitel.png"></a>
+                      <div class="content" id="panel3a">
+                        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                    <li class="accordion-navigation">
+                      <a href="#panel4a"><img src="img/accordion-logo/T-cash.png"></a>
+                      <div class="content" id="panel4a">
+                        Panel 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div><!-- steps three /*Payment method*/ content end here-->
+        </div><!-- steps wrapper /*tabs-content*/ end-->
+        <a aria-label="Close" class="close-reveal-modal"><img src="img/close.png"></a>
+      </div><!-- check out pop up   end-->
+      <!-- revealer -->
+      <div id="revealer">
+        <div class="revealer__layer" style="background:#EDECEA"></div>
+        <div class="revealer__layer" style="background:#272262"></div>
+        <div class="revealer__layer" style="background:#10113D"></div>
+      </div><!-- revealer end -->
+      <!-- preloader -->
+      <div id="loader-wrapper">
+        <div class="load">
+          <img src="img/logo.png" style="margin:0 20px;">
+          <div class="snake">
+            <span></span> <span></span> <span></span> <span></span> <span></span>
           </div>
-
-        </div>    
-
-
-
-
-
- 
-    <a class="close-reveal-modal" aria-label="Close"><img src="img/close.png"></a>
-  </div>
-
- 
-
-
-  <!-- check out pop up   end-->
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/fontawesome.js"></script>
-    <script type="text/javascript" src="js/vendor/carousel.js"></script>
-    <script src="js/vendor/lightslider.js"></script>
-    <script src="js/vendor/app.js"></script>
-
-
-  </body>
+        </div>
+      </div><!-- preloader end -->
+      <a class="exit-off-canvas"></a>
+    </div><!-- inner-wrap end -->
+  </div><!-- off-canvas-wrap end-->
+  <script src="js/vendor/jquery.js">
+  </script> 
+  <script src="js/foundation.min.js">
+  </script> 
+  <script src="js/vendor/fontawesome.js">
+  </script> 
+  <script src="js/vendor/carousel.js" type="text/javascript">
+  </script> 
+  <script src="js/vendor/lightslider.js">
+  </script> 
+  <script src="js/vendor/TweenMax.min.js">
+  </script> 
+  
+  <script src="js/vendor/app.js">
+  </script>
+</body>
 </html>
